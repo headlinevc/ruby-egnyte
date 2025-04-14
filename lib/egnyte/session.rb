@@ -134,7 +134,7 @@ module Egnyte
         'Authorization' => "Bearer #{@access_token.token}"
       }
 
-      open(uri, params)
+      URI.open(uri, params)
     end
 
     private
